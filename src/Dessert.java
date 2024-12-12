@@ -1,10 +1,14 @@
 import java.util.*;
-public class dessert extends kitchen implements food {
+
+/**
+ * A dessert.
+ */
+public class Dessert extends Kitchen implements Food {
     private double price;
     private String type;
     private TreeMap<String,Double> map;
 
-    public dessert(String name){
+    public Dessert(String name){
         super(name);
         map = new TreeMap<String,Double>();
         map.put("banana pudding", 4.99);
